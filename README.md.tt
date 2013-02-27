@@ -1,0 +1,74 @@
+# <%=constant_name%>
+
+[![Build Status][BS img]][Build Status]
+[![Dependency Status][DS img]][Dependency Status]
+[![Code Climate][CC img]][Code Climate]
+
+## Description
+
+<%=gem_summary%>
+
+```ruby
+<%=constant_name%>.new
+```
+
+## Anti-Features
+
+TODO: Write a gem anti-features if any
+
+- Does not do this
+- Does not do that
+- Does not do ...
+
+## Installation
+
+`$ gem install <%=gem_name%>` or add to your [Gemfile][] this line: `gem '<%=gem_name%>'` then run [bundle install][]
+
+## Usage
+
+Just `require '<%=gem_name%>'` and then use it as:
+
+### As a fancy tool
+
+TODO
+
+### As a crazy tool
+
+TODO
+
+## Contributing
+
+1. Fork it.
+2. Make your feature addition or bug fix and create your feature branch.
+3. Update the [Change Log][].
+3. Add specs/tests for it. This is important so I don't break it in a future version unintentionally.
+4. Commit, create a new Pull Request.
+5. Check that your pull request passes the [build][travis pull requests].
+
+## License
+
+Released under the MIT License. See the [LICENSE][] file for further details.
+
+## Links
+
+[RubyGems][] | [Documentation][] | [Source][] | [Bugtracker][] | [Build Status][] | [Dependency Status][] | [Code Climate][]
+
+
+[bundle install]: http://gembundler.com/man/bundle-install.1.html
+[Gemfile]: http://gembundler.com/man/gemfile.5.html
+[LICENSE]: LICENSE.md
+[Change Log]: CHANGELOG.md
+
+[RubyGems]: https://rubygems.org/gems/<%=gem_name%>
+[Documentation]: http://rubydoc.info/gems/<%=gem_name%>
+[Source]: https://github.com/<%=github_user%>/<%=gem_name%>
+[Bugtracker]: https://github.com/<%=github_user%>/<%=gem_name%>/issues
+
+[BS img]: https://travis-ci.org/<%=github_user%>/<%=gem_name%>.png
+[DS img]: https://gemnasium.com/<%=github_user%>/<%=gem_name%>.png
+[CC img]: https://codeclimate.com/github/<%=github_user%>/<%=gem_name%>.png
+
+[Build Status]: https://travis-ci.org/<%=github_user%>/<%=gem_name%>
+[travis pull requests]: https://travis-ci.org/<%=github_user%>/<%=gem_name%>/pull_requests
+[Dependency Status]: https://gemnasium.com/<%=github_user%>/<%=gem_name%>
+[Code Climate]: https://codeclimate.com/github/<%=github_user%>/<%=gem_name%>
