@@ -35,7 +35,7 @@ module GemNewgem
 
       def initialize_git_repo
         Dir.chdir(gem_name) do
-          say "INFO: Initializating git repo at #{gem_name}/"
+          say "INFO: Initializing git repo at #{gem_name}/"
           system_with_say "git init"
           system_with_say "git add ."
 
