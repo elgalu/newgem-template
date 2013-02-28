@@ -1,8 +1,10 @@
 # <%=constant_name%>
 
+[![Gem Version][GV img]][Gem Version]
 [![Build Status][BS img]][Build Status]
 [![Dependency Status][DS img]][Dependency Status]
 [![Code Climate][CC img]][Code Climate]
+[![Coverage Status][CS img]][Coverage Status]
 
 ## Description
 
@@ -64,11 +66,16 @@ Released under the MIT License. See the [LICENSE][] file for further details.
 [Source]: https://github.com/<%=github_user%>/<%=gem_name%>
 [Bugtracker]: https://github.com/<%=github_user%>/<%=gem_name%>/issues
 
+[travis pull requests]: https://travis-ci.org/<%=github_user%>/<%=gem_name%>/pull_requests
+
+[Gem Version]: https://rubygems.org/gems/<%=gem_name%>
+[Build Status]: https://travis-ci.org/<%=github_user%>/<%=gem_name%>
+[Dependency Status]: https://gemnasium.com/<%=github_user%>/<%=gem_name%>
+[Code Climate]: https://codeclimate.com/github/<%=github_user%>/<%=gem_name%>
+[Coverage Status]: https://coveralls.io/r/<%=github_user%>/<%=gem_name%>
+
+[GV img]: https://badge.fury.io/rb/<%=gem_name%>.png
 [BS img]: https://travis-ci.org/<%=github_user%>/<%=gem_name%>.png
 [DS img]: https://gemnasium.com/<%=github_user%>/<%=gem_name%>.png
 [CC img]: https://codeclimate.com/github/<%=github_user%>/<%=gem_name%>.png
-
-[Build Status]: https://travis-ci.org/<%=github_user%>/<%=gem_name%>
-[travis pull requests]: https://travis-ci.org/<%=github_user%>/<%=gem_name%>/pull_requests
-[Dependency Status]: https://gemnasium.com/<%=github_user%>/<%=gem_name%>
-[Code Climate]: https://codeclimate.com/github/<%=github_user%>/<%=gem_name%>
+[CS img]: https://coveralls.io/repos/<%=github_user%>/<%=gem_name%>/badge.png?branch=master

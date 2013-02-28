@@ -1,5 +1,13 @@
-require '<%= namespaced_path %>'
 require 'simplecov'
+require 'coveralls'
+
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  SimpleCov::Formatter::HTMLFormatter,
+  Coveralls::SimpleCov::Formatter
+]
+SimpleCov.start
+
+require '<%= namespaced_path %>'
 
 # Require this file using `require "spec_helper"` within each of your specs
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
@@ -11,5 +19,3 @@ RSpec.configure do |config|
   # Run specs in random order to surface order dependencies.
   config.order = 'random'
 end
-
-SimpleCov.start
