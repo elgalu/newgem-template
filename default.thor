@@ -23,7 +23,7 @@ module GemNewgem
         if defined?(GemNewgem::Newgem::Configuration)
           GemNewgem::Newgem::Configuration.instance.templates_base_dir
         else
-          "~/.newgem-templates/"
+          File.expand_path('../..', __FILE__)
         end
       end
 
