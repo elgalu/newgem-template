@@ -16,7 +16,7 @@ module GemNewgem
       argument :template_name
 
       class_option :gem_summary,     :default => %q{TODO: Add your gem summary here.}
-      class_option :exclude_pattern, :default => %r!(\.git\/)|(#{@script_name}.*\.thor)!
+      class_option :exclude_pattern, :default => %r!(\.git\/)|(#{@script_name}.*\.thor)|(README\.markdown)!
 
       # The PATH containing your templates
       def self.source_root
@@ -54,7 +54,12 @@ end
 
 if $0 == __FILE__
   # Scripted main
-  args = ARGV + ['default']
-  script = GemNewgem::Templates::Default.new(args)
+  unless ARGV[0].to_s.match /\w+/
+    puts "Usage: #{$0} GEMNAME [--summary 'TODO: write summary']"
+    exit 1
+  end
+  args = [ARGV[0], 'default']
+  opts = ["-s", "--summary"].include?(ARGV[1].to_s.strip) ? { gem_summary: ARGV[2] } : {}
+  script = GemNewgem::Templates::Default.new(args, opts)
   script.invoke_all
 end
