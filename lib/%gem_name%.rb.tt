@@ -1,4 +1,4 @@
-require "<%=namespaced_path%>/version"
+require '<%=namespaced_path%>/version'
 
 <%- constant_array.each_with_index do |c,i| -%>
 <%= '  '*i %>module <%= c %>
