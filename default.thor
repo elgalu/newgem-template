@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-gem 'thor-exclude_pattern', '>= 0.18'
+gem 'thor-exclude_pattern', '>= 0.18.1'
 require 'thor'
 require_relative 'default_helper.thor.rb'
 

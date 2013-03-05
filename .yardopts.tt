@@ -1,0 +1,6 @@
+--readme README.md
+--title '<%=constant_name%> API Documentation'
+--charset utf-8
+-
+LICENSE.md
+CHANGELOG.md
