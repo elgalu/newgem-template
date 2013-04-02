@@ -6,9 +6,8 @@ Will generate a bootstrap new gem structure using your GEMNAME, github user, git
 
 ## Pre-requisites
 
-    gem install thor-exclude_pattern
+    gem install thor
 
 ## Usage
 
     ./default.thor GEMNAME [--summary 'TODO: write summary']
-
