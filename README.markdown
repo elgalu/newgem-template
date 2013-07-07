@@ -1,4 +1,4 @@
-# New Gem generator
+# New Gem generator  [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/3e42873b86fa87137d39fbf226078afb "githalytics.com")](http://githalytics.com/elgalu/newgem-template)
 
 ## Description
 
