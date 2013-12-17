@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-gem 'thor', '>= 0.18.1'
+gem 'thor', '>= 0.18.1' # Poor man's dependency management
 require 'thor'
 require_relative 'default_helper.thor.rb'
 

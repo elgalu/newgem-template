@@ -1,5 +1,6 @@
 # System extension
 module Kernel
+  # Poor man logger
   def system_with_say(cmd)
     say "  #{cmd}"
     system cmd
@@ -33,7 +34,7 @@ module GemNewgem
         def author
           git_user_name = `git config user.name`.chomp
           if git_user_name.empty?
-            say "Couldn't find 'git config user.name' so will use general text."
+            say "WARN: Couldn't find 'git config user.name' so will use general text."
             "TODO: Write your name"
           else
             git_user_name
@@ -43,7 +44,7 @@ module GemNewgem
         def email
           git_user_email = `git config user.email`.chomp
           if git_user_email.empty?
-            say "Couldn't find 'git config user.email' so will use general text."
+            say "WARN: Couldn't find 'git config user.email' so will use general text."
             "TODO: Write your email address"
           else
             git_user_email
@@ -53,7 +54,7 @@ module GemNewgem
         def github_user
           username = `git config github.user`.chomp
           if username.empty?
-            say "Couldn't find 'git config github.user' so will use general text."
+            say "WARN: Couldn't find 'git config github.user' so will use general text."
             "TODO: Write your github username"
           else
             username
